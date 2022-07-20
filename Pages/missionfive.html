@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIEN ADVENTURES: The Math Word Problem Game</title>
+    <link rel="icon" href="/Resources/Images/alien_logo.png">
+    <!-- Stylesheet Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Kanit:wght@300;600;800&display=swap" rel="stylesheet">
+    <link href="/Resources/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1>Alien Adventures</h1></a>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Mission <span class="missionNumberTitle">05</span></h2>
+        </div>
+
+        <div class="missionMath">
+            <p>Your last mission is to figure out how far Mars is from Earth. Make an educated guess and let the Alien Leader know.</p>
+            <label>Mars is about</label>
+                <select id="answer">
+                    <option value="115.24 million">115.24 million</option>
+                    <option value="1.19 million">1.19 million</option>
+                    <option value="50 million">50 million</option>
+                </select>
+            <label>miles away from Earth.</label>    
+            <span id="hint">Need a hint?</span>
+            <span id="hintDisplay">Take a guess and compare it with the other options.</span>
+            <button id="submit" type="submit">Submit</button>
+            <h4 id="answerDisplay"></h4>
+        </div>
+        <button id="nextMission" type="submit"><a href="/Pages/thanks.html">NEXT STEP >>></a></button>
+    </main>
+
+
+    <script src="/Resources/main.js" type="text/javascript"></script>
+</body>
+</html>

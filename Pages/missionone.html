@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIEN ADVENTURES: The Math Word Problem Game</title>
+    <link rel="icon" href="/Resources/Images/alien_logo.png">
+    <!-- Stylesheet Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Kanit:wght@300;600;800&display=swap" rel="stylesheet">
+    <link href="/Resources/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1>Alien Adventures</h1></a>
+    </header>
+
+    <main>
+        <div class="title">
+            <div>
+                <h2>Mission <span class="missionNumberTitle">01</span></h2>
+            </div>
+        </div>
+
+        <div class="missionMath">
+            <p>Aliens have landed on planet Earth! Your mission is to count how many have landed. There are 4 spaceships with 10 aliens on each spaceship. How many aliens in total have landed on Earth?</p>
+            <label>Total Number of Aliens:</label>
+                <select id="answer">
+                    <option value="14">14</option>
+                    <option value="40">40</option>
+                    <option value="410">410</option>
+                </select>
+                <!-- #hint for JS -->
+                <span id="hint">Need a hint?</span>
+                <!-- Set as "hidden" by default, when clicked... the hint display shows up... (JS code) -->
+                <span id="hintDisplay">Let's simplify it. How many total aliens are there if there were 2 spaceships with 5 aliens on each ship?</span>
+            <!-- #submit for JS -->
+            <button id="submit" type="submit">Submit</button>
+            <h4 id="answerDisplay"></h4>
+        </div>
+        <button id="nextMission" type="submit"><a href="/Pages/missiontwo.html">NEXT MISSION >>></a></button>
+    </main>
+
+
+    <script src="/Resources/main.js" type="text/javascript"></script>
+</body>
+</html>

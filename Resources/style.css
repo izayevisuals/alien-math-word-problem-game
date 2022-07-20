@@ -1,0 +1,293 @@
+/********************************/
+/******* Generic Styling ********/
+/********************************/
+html {
+    font-size: 16px;
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    background:  linear-gradient(to bottom, rgb(0, 0, 0), rgba(66, 66, 66, 0.291)), url('/Resources/Images/Alien_Background.webp'); /* link: https://wallpaperaccess.com/full/544052.jpg */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*******************************/
+/******* Page Styling **********/
+/*******************************/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4.5rem;
+}
+
+main {
+    background-color: #fcfcfccb;
+    margin: 1rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 60%;
+    height: fit-content;
+    box-shadow: 0 1rem 0.5rem rgba(31, 31, 31, 0.687);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.5rem;
+    border-left: 0.3rem solid rgb(46, 46, 46);
+    border-top: 0.3rem solid rgb(46, 46, 46);
+    width: 6.7rem;
+    height: 4.7rem;
+}
+
+.missionMath {
+    border-left: 0.3rem solid rgb(46, 46, 46);
+    background-color: #2e2e2e1d;
+    padding: 0.7rem;
+    margin-top: 0.7rem;
+}
+
+/*****************************************/
+/******* Typography/Text Styling *********/ 
+/*****************************************/
+/* For titles: font-family: 'Audiowide', cursive;
+For text/subtitles: font-family: 'Kanit', sans-serif; */
+h1 {
+    background: url('/Resources/Images/alien_logo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0.1rem 0.3rem #2e2e2e;
+    color: #f6f9f5;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0rem;
+    padding: 0rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Audiowide', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem;
+    margin-top: 0rem; 
+    text-transform: uppercase;
+    color: rgb(46, 46, 46);
+}
+
+p, label, select, option, h4 {
+    font-family: 'Kanit', sans-serif;
+    color: rgb(46, 46, 46);
+    font-size: 0.9rem;
+}
+
+.portfolio {
+    font-family: 'Kanit', sans-serif;
+    color: rgb(34, 51, 40);
+    font-size: 0.7rem;
+}
+
+a.portfolio {
+    color: green;
+}
+
+#hint {
+    padding: 0rem 0.5rem;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(92, 91, 91);
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+#hint:hover {
+    color:black;
+}
+
+#hintDisplay {
+    display: none; /* Set as "hidden" by default, when clicked... the hint display shows up... (JS code)*/
+    font-family: 'Kanit', sans-serif;
+    color: rgb(92, 91, 91);
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+
+/* Mission Number */
+.missionNumberTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 3rem;
+    font-size: 4rem;
+    padding: 0rem;
+    margin: 0rem;
+    width: 7.3rem;
+    background: linear-gradient(
+        45deg,
+        hsl(104deg 34% 27%) 0%,
+        hsl(104deg 34% 30%) 11%,
+        hsl(104deg 34% 34%) 22%,
+        hsl(104deg 34% 37%) 33%,
+        hsl(104deg 34% 39%) 44%,
+        hsl(104deg 34% 42%) 56%,
+        hsl(104deg 34% 44%) 67%,
+        hsl(104deg 34% 47%) 78%,
+        hsl(104deg 34% 49%) 89%,
+        hsl(104deg 35% 51%) 100%
+      );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*******************************/
+/** Icons/Links/Media Styling **/
+/*******************************/
+button {
+    background: linear-gradient(
+        45deg,
+        hsl(104deg 34% 27%) 0%,
+        hsl(104deg 34% 30%) 11%,
+        hsl(104deg 34% 34%) 22%,
+        hsl(104deg 34% 37%) 33%,
+        hsl(104deg 34% 39%) 44%,
+        hsl(104deg 34% 42%) 56%,
+        hsl(104deg 34% 44%) 67%,
+        hsl(104deg 34% 47%) 78%,
+        hsl(104deg 34% 49%) 89%,
+        hsl(104deg 35% 51%) 100%
+      ); 
+    font-family: 'Audiowide', cursive;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0rem;
+    display: block;
+    box-shadow: 0 0.3rem 0.3rem rgba(31, 31, 31, 0.687);
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(
+        45deg,
+        hsl(104deg 37% 48%) 0%,
+        hsl(104deg 34% 50%) 11%,
+        hsl(104deg 33% 52%) 22%,
+        hsl(104deg 33% 55%) 33%,
+        hsl(104deg 32% 57%) 44%,
+        hsl(104deg 31% 59%) 56%,
+        hsl(104deg 31% 61%) 67%,
+        hsl(104deg 30% 63%) 78%,
+        hsl(104deg 29% 66%) 89%,
+        hsl(104deg 28% 68%) 100%
+      );
+      transition: 0.6s;
+}
+
+#nextMission {
+    font-size: x-large;
+    margin: 1rem 2rem 1rem 3rem;
+}
+
+a {
+    text-decoration: none;
+    color:#2e2e2e;
+}
+
+/*******************************/
+/****** Specific Styling *******/
+/*******************************/
+#answerDisplay {
+    margin-top: 1rem;
+}
+
+
+/*******************************/
+/******** Media Queries ********/
+/*******************************/
+@media all and (min-width: 1135px){
+    main {
+        display: flex;
+    }
+
+    .missionMath {
+        border-left: 0.3rem solid rgb(46, 46, 46);
+        background-color: #2e2e2e1d;
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 3rem;
+    }
+
+    label, select, option {
+        font-size: 1.1rem;
+    }
+}
+
+@media all and (max-width: 899px){
+    
+    h1 {
+        background-size: 30%;
+        height: 7.5rem;
+    }
+}
+
+@media all and (max-width: 680px){
+    main {
+        margin-bottom: 5rem;
+        margin-top: 0rem;
+        width: 75%;
+    }
+
+    h1 {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        font-size: 5vw;
+    }
+
+    .title {
+        width: 4rem;
+        height: 3.5rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+        align-items: flex-start;
+    }
+
+    .missionNumberTitle {
+        font-size: 3.4rem;
+    }
+
+    #nextMission {
+        font-size: large;
+        margin: 1rem;
+    }
+}
